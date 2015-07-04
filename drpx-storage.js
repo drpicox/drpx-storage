@@ -18,6 +18,8 @@
 		.factory('storageFactory', storageFactoryFactory)
 		;
 
+	var localforage = window.localforage;
+
 	storageFactoryFactory.$inject = ['$q','$window'];
 	function storageFactoryFactory  ( $q , $window ) {
 		// storages identity map
